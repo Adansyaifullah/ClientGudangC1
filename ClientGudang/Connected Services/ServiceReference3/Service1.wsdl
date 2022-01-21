@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://gudangbajuu.com:8011/ServiceGudang.Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://gudangbajuu.com:8011/ServiceGudang.Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://gudangbajuu.com:8011/ServiceGudang.Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceGudang" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_databarang_InputMessage">
+    <wsdl:part name="parameters" element="tns:databarang" />
+  </wsdl:message>
+  <wsdl:message name="IService1_databarang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:databarangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editDataBarang_InputMessage">
+    <wsdl:part name="parameters" element="tns:editDataBarang" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editDataBarang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editDataBarangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteDataBarang_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDataBarang" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteDataBarang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDataBarangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegister" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegister" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DataRegist_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataRegist" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DataRegist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataRegistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReviewLokasi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReviewLokasi" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReviewLokasi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReviewLokasiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DetailLokasi_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetailLokasi" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DetailLokasi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetailLokasiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DataBarang_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataBarang" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DataBarang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataBarangResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="databarang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/databarang" message="tns:IService1_databarang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/databarangResponse" message="tns:IService1_databarang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editDataBarang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editDataBarang" message="tns:IService1_editDataBarang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editDataBarangResponse" message="tns:IService1_editDataBarang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDataBarang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteDataBarang" message="tns:IService1_deleteDataBarang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteDataBarangResponse" message="tns:IService1_deleteDataBarang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Register" message="tns:IService1_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterResponse" message="tns:IService1_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateRegister" message="tns:IService1_UpdateRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateRegisterResponse" message="tns:IService1_UpdateRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteRegister" message="tns:IService1_DeleteRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteRegisterResponse" message="tns:IService1_DeleteRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataRegist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DataRegist" message="tns:IService1_DataRegist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DataRegistResponse" message="tns:IService1_DataRegist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReviewLokasi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReviewLokasi" message="tns:IService1_ReviewLokasi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReviewLokasiResponse" message="tns:IService1_ReviewLokasi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetailLokasi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DetailLokasi" message="tns:IService1_DetailLokasi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DetailLokasiResponse" message="tns:IService1_DetailLokasi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataBarang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DataBarang" message="tns:IService1_DataBarang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DataBarangResponse" message="tns:IService1_DataBarang_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="databarang">
+      <soap:operation soapAction="http://tempuri.org/IService1/databarang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editDataBarang">
+      <soap:operation soapAction="http://tempuri.org/IService1/editDataBarang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDataBarang">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteDataBarang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IService1/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegister">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegister">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DataRegist">
+      <soap:operation soapAction="http://tempuri.org/IService1/DataRegist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReviewLokasi">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReviewLokasi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetailLokasi">
+      <soap:operation soapAction="http://tempuri.org/IService1/DetailLokasi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DataBarang">
+      <soap:operation soapAction="http://tempuri.org/IService1/DataBarang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://gudangbajuu.com:8011/ServiceGudang.Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

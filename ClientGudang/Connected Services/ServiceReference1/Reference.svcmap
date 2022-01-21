@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0cb6c374-0477-4a2a-b48b-adc71a7ab84e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="817b74df-22fe-4fdc-8f9f-d6c0d0026db1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="851d183b-72f8-4b74-a024-e7b183f811cc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="44603188-3137-4e7f-aa87-558d9b9cee82" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="56502c93-beeb-4ebc-bea6-2a5700b53a7e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="72b47d83-e392-4614-900e-2185d2832c13" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ServiceGudang/Service1/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
